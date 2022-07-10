@@ -8,5 +8,5 @@ object FinalRegex {
   }
 
   def matchAnywhere(input: String, pattern: String) =
-    fullMatch(input, ".*" + pattern + ".*")
+    fullMatch(input, ".*(" + pattern + ").*")
 }
